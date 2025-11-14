@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar clase</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <nav class="navbar">...</nav>
+  <header><h1>Reservar clase</h1></header>
+  <div class="container">
+    <form action="../php/reservar.php" method="POST">
+      <input type="hidden" name="clase_id" value="<?php echo $_GET['clase_id']; ?>">
+      <input type="email" name="correo" placeholder="Correo registrado" required>
+      <button type="submit">Confirmar reservación</button>
+    </form>
+  </div>
+</body>
+</html>

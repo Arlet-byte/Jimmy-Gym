@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <nav class="navbar">...</nav>
+  <header><h1>Actualizar Perfil</h1></header>
+  <div class="container">
+    <form action="../php/perfil.php" method="POST">
+      <input type="email" name="correo" placeholder="Correo registrado" required>
+      <input type="number" step="0.1" name="peso" placeholder="Peso (kg)" required>
+      <input type="number" step="0.01" name="altura" placeholder="Altura (m)" required>
+      <input type="text" name="objetivo" placeholder="Objetivo" required>
+      <button type="submit">Actualizar</button>
+    </form>
+  </div>
+</body>
+</html>

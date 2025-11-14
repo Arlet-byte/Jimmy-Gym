@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi rutina</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="clases.html">Clases</a></li>
+      <li><a href="rutina.html">Rutina</a></li>
+    </ul>
+  </nav>
+
+  <header><h1>Mi rutina personalizada</h1></header>
+  <div class="container">
+    <form action="../php/rutina.php" method="POST">
+      <input type="email" name="correo" placeholder="Correo registrado" required>
+      <button type="submit">Ver rutina</button>
+    </form>
+  </div>
+</body>
+</html>

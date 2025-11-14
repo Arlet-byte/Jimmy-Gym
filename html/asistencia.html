@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de asistencia</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="rutina.html">Rutina</a></li>
+      <li><a href="progreso.html">Progreso</a></li>
+      <li><a href="asistencia.html">Asistencia</a></li>
+    </ul>
+  </nav>
+
+  <header><h1>Registro de asistencia</h1></header>
+  <div class="container">
+    <form action="../php/asistencia.php" method="POST">
+      <input type="email" name="correo" placeholder="Correo registrado" required>
+      <button type="submit">Registrar entrada</button>
+    </form>
+  </div>
+</body>
+</html>

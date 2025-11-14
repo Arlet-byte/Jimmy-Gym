@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensaje</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="clases.html">Clases</a></li>
+      <li><a href="membresia.html">Membresía</a></li>
+      <li><a href="rutina.html">Rutina</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Resultado</h1>
+  </header>
+
+  <div class="container">
+    <p id="mensaje"></p>
+    <a href="../index.html"><button>Volver al inicio</button></a>
+  </div>
+
+  <script>
+    const msg = new URLSearchParams(window.location.search).get("msg");
+    const mensaje = document.getElementById("mensaje");
+
+    const mensajes = {
+      registro: "Registro exitoso. ¡Bienvenido!",
+      perfil: "Perfil actualizado correctamente.",
+      login_error: "Credenciales incorrectas. Intenta de nuevo.",
+      error: "Ocurrió un error. Intenta más tarde.",
+      reservado: "Reservación confirmada.",
+      cupo_lleno: "Lo sentimos, el cupo está lleno.",
+      usuario_no_encontrado: "Usuario no encontrado.",
+      membresia: "Membresía activada correctamente.",
+      renovada: "Membresía renovada.",
+      sin_membresia: "No hay membresía registrada.",
+      rutina_asignada: "Rutina asignada correctamente.",
+      rutina_actualizada: "Rutina actualizada con éxito.",
+      sin_membresia: "No tienes una membresía activa. Por favor renueva para registrar asistencia."
+    };
+
+    mensaje.textContent = mensajes[msg] || "Operación completada.";
+  </script>
+</body>
+</html>

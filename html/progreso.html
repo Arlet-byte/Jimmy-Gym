@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progreso físico</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="rutina.html">Rutina</a></li>
+      <li><a href="progreso.html">Progreso</a></li>
+    </ul>
+  </nav>
+
+  <header><h1>Seguimiento de progreso físico</h1></header>
+  <div class="container">
+    <form action="../php/progreso.php" method="POST">
+      <input type="email" name="correo" placeholder="Correo registrado" required>
+      <input type="date" name="fecha" required>
+      <input type="number" step="0.1" name="peso" placeholder="Peso (kg)" required>
+      <input type="number" step="0.1" name="cintura" placeholder="Cintura (cm)" required>
+      <input type="number" step="0.1" name="pecho" placeholder="Pecho (cm)" required>
+      <button type="submit">Registrar progreso</button>
+    </form>
+  </div>
+</body>
+</html>
